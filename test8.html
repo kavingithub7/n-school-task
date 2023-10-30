@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>clouser program </h1>
+    <script>
+        
+        function outerfunction(outerdata)
+        {
+            return  function innerfunction(innerdata)
+            {
+                return outerdata+innerdata;
+
+            };
+        }
+        const closure = outerfunction(10);
+        const result = closure(5);
+        document.write(result);
+
+
+    </script>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name1">NAME 1</label>
+    <input type="text" id="one"><br>
+    <label for="name2">NAME 2</label>
+    <input type="text" id="two"><br>
+    <button onclick=" f1()">click to check</button>
+    <script>
+        function f1()
+        {
+            a = document.getElementById("one").value;
+            b = document.getElementById("two").value;
+            c = a.split("");
+            d = b.split("");
+            e=c.sort();
+            f=d.sort();
+            g=e.join("");
+            h=f.join("")
+            if(g==h)
+            {
+                
+                document.write(true)
+            }
+            else
+            {
+           document.write(false)
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>

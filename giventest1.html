@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="num">ENTER THE NUMBER</label>
+    <input type="number" id="num1"><br>
+    <button onclick="f1()">click to check</button>
+    <script>
+        function f1()
+        {
+
+       
+         let a = document.getElementById("num1").value;
+         let b = 0;
+         let c = 1;
+         document.write(b,"<br>")
+         document.write(c,"<br>")
+         for(i=0;i<a-2;i++)
+         {
+         
+            x = b +  c;
+            b = c;
+            c = x;
+           
+            if(a>=x)
+            {
+                document.write(x,"<br>")
+            }
+
+         }
+        
+        }
+
+
+    </script>
+    
+</body>
+</html>
